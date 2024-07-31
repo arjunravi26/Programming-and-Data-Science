@@ -1,0 +1,24 @@
+a {
+  text-decoration: none;
+  color: red;
+}
+.navbar {
+  background-color: pink;
+  display: flex;
+  justify-content: space-evenly;
+}
+li {
+  list-style-type: none;
+  display: inline;
+  background-color: white;
+}
+.outer{
+height: 400px;
+width: 400px;
+background-color: cornflowerblue;
+}
+.inner{
+    height: 100px;
+    width: 100px;
+    background-color: darkorchid;
+    }
