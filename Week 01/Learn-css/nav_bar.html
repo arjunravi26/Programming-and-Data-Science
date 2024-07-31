@@ -8,10 +8,11 @@
     <style>
         div {
             width: 100%;
+            display: inline-flex;
+            unicode-bidi: isolate;
             height: 50px;
             border: 5px solid white;
             background-color: black;
-            padding-left: 20px;
         }
 
         body {
@@ -23,8 +24,22 @@
             margin-block-start: 0;
         }
         h4{
+            padding-left: 200px;
             color: white;
             margin-block-start: 0;
+
+        }
+        input{
+            margin-left: 200px;
+            width: 200px;
+            height: 20px;
+        }
+        button{
+        margin-left: 5px;
+        background-color: rgb(255, 200, 0);
+        color: white;
+        width: 100px;
+        height: 20px;
 
         }
     </style>
@@ -36,6 +51,8 @@
         <h4>Account</h4>
         <h4>Cart</h4>
         <h4>Contact Us</h4>
+        <input type="text" name="" id="" placeholder="Search Amazon.in">
+        <button>Search</button>
     </div>
 </body>
 
