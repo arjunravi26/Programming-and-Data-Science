@@ -12,13 +12,16 @@ li {
   display: inline;
   background-color: white;
 }
-.outer{
-height: 400px;
-width: 400px;
-background-color: cornflowerblue;
+.outer {
+  height: 400px;
+  width: 400px;
+  background-color: cornflowerblue;
+  display: flex; 
+  align-items: center;
+  justify-content: center;
 }
-.inner{
-    height: 100px;
-    width: 100px;
-    background-color: darkorchid;
-    }
+.inner {
+  height: 100px;
+  width: 100px;
+  background-color: darkorchid;
+}
