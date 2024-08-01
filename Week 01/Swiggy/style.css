@@ -71,7 +71,7 @@ body {
   font-weight: 600;
 }
 .items {
-  margin-left: 150px;
+  margin-left: 200px;
   margin-right: 150px;
   margin-top: 20px;
   display: grid;
@@ -111,13 +111,13 @@ body {
 .img-content {
   position: absolute;
   top: 150px;
-  left: 10px;
   font-weight: 900;
-  font-size: 24px;
+  font-size: 22px;
 }
 .img-details {
   display: flex;
   flex-direction: column;
+  gap: 3px;
 }
 .rating {
   display: flex;
@@ -126,7 +126,7 @@ body {
 }
 .img-details p {
   font-family: Gilroy;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 19px;
   letter-spacing: -0.3px;
   width: 300px;
@@ -137,4 +137,42 @@ body {
 .div-content:hover {
   transition: 0.5s;
   transform: scale(0.95);
+}
+.items-sec {
+  margin-left: 200px;
+  margin-right: 150px;
+  margin-top: 20px;
+  display: grid;
+  cursor: pointer;
+  gap: 20px;
+  grid-auto-flow: row;
+}
+.border-div {
+  border: 1px solid rgba(2, 6, 12, 0.05);
+  /* margin: 32px calc(10% + 52px); */
+  margin-top: 70px;
+  margin-bottom: 20px;
+}
+.opt{
+    border-radius: 20px;
+    border:  0.5px solid rgb(136, 136, 136);
+    width: auto;
+    height: 25px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10px 5px 10px;
+    gap: 5px;
+    font-size: 0.8rem;
+}
+.item-sec-opt{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.opt-img{
+    background-image: url('Images/filter-icon.png');
+    background-size: cover;
+    height: 15px;
+    width: 15px;
 }
