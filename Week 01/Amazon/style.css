@@ -28,7 +28,6 @@
   padding: 2px;
   border: 2px solid transparent;
   cursor: pointer;
-
 }
 .border:hover {
   border: 1.5px solid white;
@@ -84,17 +83,17 @@
   align-items: center;
 }
 .flag-img {
-  width: 20px; 
-  height: 15px; 
-  background-image: url('images/56915_W3.jpg');
+  width: 20px;
+  height: 15px;
+  background-image: url("images/56915_W3.jpg");
   background-size: cover;
 }
 
 .nav-lan i {
-  font-size: 0.7em; 
+  font-size: 0.7em;
 }
 .nav-lan h3 {
-  font-size: 0.8em; 
+  font-size: 0.8em;
 }
 /*Box4*/
 span {
@@ -180,7 +179,6 @@ span {
   margin-top: 1rem;
   margin-bottom: 1rem;
   cursor: pointer;
-
 }
 .box-content {
   margin-left: 1rem;
@@ -188,7 +186,6 @@ span {
 }
 .box-content {
   color: black;
-
 }
 .box-grid {
   display: grid;
@@ -228,7 +225,7 @@ span {
 .box-content a:hover {
   color: rgb(198, 66, 66);
 }
-.box-content h2{
+.box-content h2 {
   padding-left: 15px;
   padding-bottom: 15px;
 }
