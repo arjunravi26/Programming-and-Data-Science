@@ -241,10 +241,114 @@ span {
 .box-content h2 {
   padding-left: 15px;
   padding-bottom: 15px;
+  font-size: 20px;
+}
+.small-box {
+  margin: 20px;
+  width: 100%;
+  min-height: 220px;
+  background-color: white;
+}
+.small-box h2 {
+  padding-bottom: 1px;
+  padding-left: 20px;
+  margin-top: 10px;
+}
+.small-box-img {
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 200px;
+}
+.div-small-img {
+  margin: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.small-box-img-book {
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 150px;
+  height: 200px;
+}
+.small-box1-img {
+  width: 250px;
+  height: 200px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.most-viewed {
+  margin-top: 3640px;
+  background-color: white;
+  height: 500px;
+  width: 100%;
+  position: relative;
+}
+.most-viewed::before {
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: 0;
+  right: 0;
+  border-top: 0.5px solid rgb(197, 197, 197);
+}
+.most-viewed h2 {
+  padding-top: 40px;
+  padding-left: 15px;
+  font-size: 1.3rem;
+}
+.most-viewed div {
+  display: flex;
+  justify-content: space-evenly;
+}
+.div-content {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+}
+.most-view-item {
+  margin-top: 10px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.des {
+  color: #007185;
+  cursor: pointer;
+}
+.rating {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.rating-img {
+  justify-self: flex-start !important;
+  background-color: red;
+  background-size: cover;
+  height: 30px;
+  width: 70px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.rate-nos {
+  font-size: 12px !important;
+  justify-self: flex-start;
+}
+.rate {
+  align-self: flex-start;
+  cursor: pointer;
+}
+.most-view-img {
+  width: 150px;
+  height: 150px;
+  background-size: cover;
+  margin: 15px;
 }
 /*sign in*/
 .sign-in-div {
-  margin-top: 880px;
   height: 200px;
   background-color: white;
   display: flex;
@@ -331,9 +435,6 @@ ul {
 .foot-panel4 {
   background-color: #0f1111;
   color: white;
-  /* align-items: center;
-  display: flex;
-  justify-content: center; */
   height: 80px;
   font-size: 0.7rem;
   text-align: center;
