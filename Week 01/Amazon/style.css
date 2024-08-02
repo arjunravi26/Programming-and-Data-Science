@@ -490,9 +490,9 @@ td {
   cursor: pointer;
   text-decoration: underline;
 }
-.pages {
-  /* padding-top: 20px; */
-}
+/* .pages {
+  padding-top: 20px;
+} */
 .copyright {
   padding-top: 5px;
 }
