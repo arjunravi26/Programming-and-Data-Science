@@ -134,6 +134,7 @@ body {
   overflow: hidden;
   margin-left: 1px;
 }
+
 .div-content:hover {
   transition: 0.5s;
   transform: scale(0.95);
@@ -147,6 +148,9 @@ body {
   gap: 20px;
   grid-auto-flow: row;
 }
+.items-not {
+  cursor: not-allowed;
+}
 .border-div {
   border: 1px solid rgba(2, 6, 12, 0.05);
   /* margin: 32px calc(10% + 52px); */
@@ -154,25 +158,89 @@ body {
   margin-bottom: 20px;
 }
 .opt{
-    border-radius: 20px;
-    border:  0.5px solid rgb(136, 136, 136);
-    width: auto;
-    height: 25px;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    padding: 5px 10px 5px 10px;
-    gap: 5px;
-    font-size: 0.8rem;
+  border-radius: 20px;
+  border: 0.3px solid rgb(185, 185, 185);
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 15px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #3d4152;
+  gap: 5px;
+
+
 }
-.item-sec-opt{
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
+.opt-sec {
+  border-radius: 10px;
+  border: 1px solid rgb(136, 136, 136);
+  width: 250px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  gap: 10px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-align: center;
+  border-color: rgba(2, 6, 12, 0.1);
+  color: rgba(2, 6, 12, 0.75);
+  /* overflow: hidden; */
+    /* line-height: 19px;
+  letter-spacing: -0.3px; */
+
 }
-.opt-img{
-    background-image: url('Images/filter-icon.png');
-    background-size: cover;
-    height: 15px;
-    width: 15px;
+
+
+.item-sec-opt {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.opt-img {
+  background-image: url("Images/filter-icon.png");
+  background-size: cover;
+  height: 15px;
+  width: 15px;
+}
+.cites-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 50px 150px 30px 200px;
+  gap: 20px;
+}
+.cites-div h2 {
+  margin: 0px;
+  /* font-family: Gilroy; */
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -0.4px;
+  color: rgba(2, 6, 12, 0.92);
+}
+.cites-opt {
+  display: flex;
+  cursor: pointer;
+  gap: 20px;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.opt-last{
+  border-radius: 10px;
+  border: 1px solid rgb(136, 136, 136);
+  width: 520px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 30px;
+  gap: 10px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-align: center;
+  border-color: rgba(2, 6, 12, 0.1);
+  color: rgba(2, 6, 12, 0.75);
 }
