@@ -157,7 +157,7 @@ body {
   margin-top: 70px;
   margin-bottom: 20px;
 }
-.opt{
+.opt {
   border-radius: 20px;
   border: 0.3px solid rgb(185, 185, 185);
   height: 20px;
@@ -169,12 +169,11 @@ body {
   font-weight: 600;
   color: #3d4152;
   gap: 5px;
-
-
 }
 .opt-sec {
   border-radius: 10px;
-  border: 1px solid rgb(136, 136, 136);
+  border: 1px solid rgb(214, 209, 209);
+  /* border: 1px solid rgba(9, 14, 21, 0.1); */
   width: 250px;
   height: 25px;
   display: flex;
@@ -185,14 +184,12 @@ body {
   font-size: 0.9rem;
   font-weight: 700;
   text-align: center;
-  border-color: rgba(2, 6, 12, 0.1);
+  /* border-color: rgba(2, 6, 12, 0.1); */
   color: rgba(2, 6, 12, 0.75);
   /* overflow: hidden; */
-    /* line-height: 19px;
+  /* line-height: 19px;
   letter-spacing: -0.3px; */
-
 }
-
 
 .item-sec-opt {
   display: flex;
@@ -228,9 +225,10 @@ body {
   flex-direction: row;
   justify-content: space-evenly;
 }
-.opt-last{
+.opt-last {
   border-radius: 10px;
-  border: 1px solid rgb(136, 136, 136);
+  border: 1px solid rgb(214, 209, 209);
+  /* border: 1px solid rgba(2, 6, 12, 0.1); */
   width: 520px;
   height: 25px;
   display: flex;
@@ -241,6 +239,131 @@ body {
   font-size: 0.9rem;
   font-weight: 700;
   text-align: center;
-  border-color: rgba(2, 6, 12, 0.1);
+  /* border-color: rgba(2, 6, 12, 0.1); */
   color: rgba(2, 6, 12, 0.75);
+}
+.better-exp-div {
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+  background-color: rgb(225, 225, 232);
+  min-height: 120px;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.better-exp-heading {
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.6px;
+  color: rgba(2, 6, 12, 0.75);
+}
+.down-img {
+  background-size: cover;
+  height: 64px;
+  width: 208px;
+}
+/* Footer */
+footer {
+  display: grid;
+  background-color: rgb(2, 6, 12);
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 0px 17.5% 7rem;
+  column-gap: 10%;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  color: white;
+  /* margin-top: 139px; */
+}
+.foot-row-head {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-evenly; */
+  align-items: center;
+  margin-top: 30px;
+}
+.foot-logo {
+  background-image: url("images/swiggy-white-logo1.jpg");
+  background-size: cover;
+  height: 50px;
+  width: 50px;
+}
+.foot-row-title {
+  /* font-size: 1.5rem; */
+  /* font-family: Gilroy; */
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -0.4px;
+  color: rgba(255, 255, 255, 0.92);
+}
+.foot-col-content {
+  /* font-family: Gilroy; */
+  font-weight: 200;
+  font-size: 17px;
+  line-height: 19px;
+  letter-spacing: -0.3px;
+  color: rgba(255, 255, 255, 0.6);
+  padding-left: 5px;
+  width: 200px;
+}
+.div-col-foot li {
+  margin-top: calc(15px);
+}
+.div-col-foot ul {
+  list-style: none;
+  padding: 0px;
+  margin-top: 45px;
+}
+.foot-ul-head {
+  /* font-family: Gilroy_Bold; */
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: -0.3px;
+  color: rgba(255, 255, 255, 0.92);
+}
+.div-col-foot a {
+  text-decoration: none;
+  /* font-family: Gilroy; */
+  font-weight: 200;
+  font-size: 17px;
+  line-height: 19px;
+  letter-spacing: -0.3px;
+  color: rgba(255, 255, 255, 0.6);
+  /* cursor: pointer; */
+}
+.div-col-foot button {
+  visibility: visible;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  background: unset;
+  box-shadow: unset;
+  height: 32px;
+  cursor: pointer;
+  padding: 2px 8px;
+  width: 100%;
+  max-width: 120px;
+  text-align: initial;
+  border-radius: 8px;
+}
+.foot-but-conts {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 10px;
+}
+.foot-cites {
+  display: inline;
+  font-family: Gilroy;
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: -0.3px;
+  color: rgba(255, 255, 255, 0.6);
+}
+.foot-more-cities {
+  margin: 0px 2px 0px 20px;
+  color: rgba(255, 255, 255, 0.6);
 }
