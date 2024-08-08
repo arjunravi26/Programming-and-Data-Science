@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+.nav-img-logo {
+  display: inline-block;
+  height: 32px;
+}
+.btn-outline-dark:hover {
+  background-color: rgb(230, 230, 230) !important;
+}
+
+.underline::after {
+  content: "";
+  position: absolute;
+  width: 80%;
+  height: 2px;
+  bottom: -3px;
+  left: 15px;
+  background-color: black;
+  visibility: hidden;
+  transform: scaleX(0);
+}
+
+.underline:hover::after {
+  visibility: visible;
+  transform: scaleX(1);
+}
