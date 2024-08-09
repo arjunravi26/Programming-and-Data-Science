@@ -1,4 +1,4 @@
-* {
+/* * {
   box-sizing: border-box;
   padding: 0px;
   margin: 0px;
@@ -30,9 +30,19 @@
   visibility: visible;
   transform: scaleX(1);
 }
+/*  */
+.space-container{
+  content: "";
+  position: relative;
+  width: 80%;
+  height: 4rem;
+  top: 1px;
+  background-color: black;
+  visibility: hidden;
+}
 
 /* color of description */
 .des-color{
 background-image: linear-gradient(90deg, #e8e7f2, #e5e9f5, #e2ebf7, #deedf8, #dbeff8, #daf0f7, #daf2f5, #daf3f3, #dcf4f1, #dff5ef, #e2f5ee, #e5f6ec);
 
-}
+} 
