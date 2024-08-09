@@ -1,19 +1,23 @@
-/* * {
+/* Reset some default styles */
+* {
   box-sizing: border-box;
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
 }
-/* logo image in nav */
+
+/* Logo image in navbar */
 .nav-img-logo {
   display: inline-block;
   height: 32px;
 }
-/* change nav button on hover */
+
+/* Change nav button on hover */
 .btn-outline-dark:hover {
   background-color: rgb(241, 241, 241);
   color: black;
 }
-/* define underline */
+
+/* Define underline */
 .underline::after {
   content: "";
   position: absolute;
@@ -24,25 +28,110 @@
   background-color: black;
   visibility: hidden;
   transform: scaleX(0);
+  transition: transform 0.3s ease, visibility 0.3s ease;
 }
-/* underline in hover */
+
+/* Underline on hover */
 .underline:hover::after {
   visibility: visible;
   transform: scaleX(1);
 }
-/*  */
-.space-container{
-  content: "";
+
+/* Space container */
+.space-container {
   position: relative;
-  width: 80%;
-  height: 4rem;
-  top: 1px;
+  width: 100%;
+  height: 8vh;
+  top: 5px;
   background-color: black;
   visibility: hidden;
 }
 
-/* color of description */
-.des-color{
-background-image: linear-gradient(90deg, #e8e7f2, #e5e9f5, #e2ebf7, #deedf8, #dbeff8, #daf0f7, #daf2f5, #daf3f3, #dcf4f1, #dff5ef, #e2f5ee, #e5f6ec);
+/* Description color */
+.des-color {
+  background-image: linear-gradient(
+    90deg,
+    #e8e7f2,
+    #e5e9f5,
+    #e2ebf7,
+    #deedf8,
+    #dbeff8,
+    #daf0f7,
+    #daf2f5,
+    #daf3f3,
+    #dcf4f1,
+    #dff5ef,
+    #e2f5ee,
+    #e5f6ec
+  );
+}
 
-} 
+/* Responsive text styling */
+.fl-2 {
+  letter-spacing: 0.2rem;
+  line-height: 1.5;
+}
+
+/* Heading font style */
+.font-head {
+  font-family: sans-serif;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 1024px) {
+  .fl-2 {
+    letter-spacing: 0.1rem;
+    line-height: 1.2; 
+  }
+
+  .underline::after {
+    width: 60%;
+    left: 10px;
+  }
+
+  .space-container {
+    height: 2vh; 
+  }
+
+  .btn-outline-dark {
+    padding: 0.5rem 1rem;
+  }
+
+  /* Adjust font sizes */
+  h1 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .fl-2 {
+    letter-spacing: 0.05rem;
+    line-height: 1.1;
+  }
+
+  .underline::after {
+    width: 50%;
+    left: 5px;
+  }
+
+  .space-container {
+    height: 1.5vh;
+  }
+
+  .btn-outline-dark {
+    padding: 0.4rem 0.8rem;
+  }
+
+  /* Adjust font sizes */
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+}
