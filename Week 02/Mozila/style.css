@@ -1,0 +1,183 @@
+/* Reset some default styles */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* Logo image in navbar */
+.nav-img-logo {
+  display: inline-block;
+  height: 32px;
+}
+
+/* Change nav button on hover */
+.btn-outline-dark:hover {
+  background-color: rgb(241, 241, 241);
+  color: black;
+}
+
+/* Define underline */
+.underline::after {
+  content: "";
+  position: absolute;
+  width: 80%;
+  height: 2px;
+  bottom: -3px;
+  left: 15px;
+  background-color: black;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: transform 0.3s ease, visibility 0.3s ease;
+}
+
+/* Underline on hover */
+.underline:hover::after {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+/* Space container */
+.space-container {
+  position: relative;
+  width: 100%;
+  height: 8vh;
+  top: 5px;
+  background-color: black;
+  visibility: hidden;
+}
+
+/* Description color */
+.des-color {
+  background-image: linear-gradient(
+    90deg,
+    #e8e7f2,
+    #e5e9f5,
+    #e2ebf7,
+    #deedf8,
+    #dbeff8,
+    #daf0f7,
+    #daf2f5,
+    #daf3f3,
+    #dcf4f1,
+    #dff5ef,
+    #e2f5ee,
+    #e5f6ec
+  );
+}
+
+/* Responsive text styling */
+.fl-2 {
+  letter-spacing: 0.2rem;
+  line-height: 1.5;
+}
+
+/* Heading font style */
+.font-head {
+  font-family: sans-serif;
+}
+/* Card image */
+/* .card-img-top {
+  width: 100px;
+  height: 100px;
+} */
+/* card session */
+/* .cards {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 275px);
+  grid-template-rows: repeat(2, 264px);
+  gap: 26px;
+  justify-content: center;
+  /* align-items: center; 
+  max-width: 1150px;
+  /* /* margin-top: 64px; 
+} */
+.card-img {
+  flex-wrap: wrap;
+  /* margin-left: 4vw; */
+  height: 5rem;
+  width: 5rem;
+  margin-bottom: 16px;
+}
+.card-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3vh;
+}
+.des-3-color {
+  background: #e7dfff;
+}
+.des-4 {
+  background-color: #f0f0f4;
+}
+/* .container-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+} */
+/* Media Queries for Responsive Design */
+@media (max-width: 1024px) {
+  .fl-2 {
+    letter-spacing: 0.1rem;
+    line-height: 1.2;
+  }
+
+  .underline::after {
+    width: 60%;
+    left: 10px;
+  }
+
+  .space-container {
+    height: 2vh;
+  }
+
+  .btn-outline-dark {
+    padding: 0.5rem 1rem;
+  }
+
+  /* Adjust font sizes */
+  h1 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+  .card3-img {
+    height: 50px;
+    width: 50px;
+    margin-bottom: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .fl-2 {
+    letter-spacing: 0.05rem;
+    line-height: 1.1;
+  }
+
+  .underline::after {
+    width: 50%;
+    left: 5px;
+  }
+
+  .space-container {
+    height: 1.5vh;
+  }
+
+  .btn-outline-dark {
+    padding: 0.4rem 0.8rem;
+  }
+
+  /* Adjust font sizes */
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+}
